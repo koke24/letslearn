@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.kokesoft.concurrency.PrintInOrderTest" time="0.098" tests="3" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="D:\Adan\newkspc\letslearn\concurrency\target\test-classes;D:\Adan\newkspc\letslearn\concurrency\target\classes;d:\m2repo\junit\junit\4.12\junit-4.12.jar;d:\m2repo\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;d:\m2repo\com\kokesoft\kstools\1.0.0\kstools-1.0.0.jar;d:\m2repo\com\googlecode\java-diff-utils\diffutils\1.2\diffutils-1.2.jar;d:\m2repo\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;d:\m2repo\net\sf\flexjson\flexjson\3.3\flexjson-3.3.jar;d:\m2repo\org\apache\logging\log4j\log4j-api\2.17.2\log4j-api-2.17.2.jar;d:\m2repo\javax\activation\activation\1.1.1\activation-1.1.1.jar;d:\m2repo\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;d:\m2repo\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;d:\m2repo\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;d:\m2repo\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;d:\m2repo\com\fasterxml\jackson\core\jackson-core\2.14.1\jackson-core-2.14.1.jar;d:\m2repo\com\fasterxml\jackson\core\jackson-databind\2.14.1\jackson-databind-2.14.1.jar;d:\m2repo\com\fasterxml\jackson\core\jackson-annotations\2.14.1\jackson-annotations-2.14.1.jar;d:\m2repo\com\fasterxml\jackson\dataformat\jackson-dataformat-yaml\2.14.1\jackson-dataformat-yaml-2.14.1.jar;d:\m2repo\org\yaml\snakeyaml\1.33\snakeyaml-1.33.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Paris"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="ES"/>
+    <property name="sun.boot.library.path" value="d:\jdk\bin"/>
+    <property name="sun.java.command" value="C:\Users\jmurio\AppData\Local\Temp\surefire1698281812126758163\surefirebooter2705604269719705928.jar C:\Users\jmurio\AppData\Local\Temp\surefire1698281812126758163 2022-12-24T16-05-22_363-jvmRun1 surefire17683775173029955448tmp surefire_06494872481330614680tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="test" value="PrintInOrderTest"/>
+    <property name="surefire.test.class.path" value="D:\Adan\newkspc\letslearn\concurrency\target\test-classes;D:\Adan\newkspc\letslearn\concurrency\target\classes;d:\m2repo\junit\junit\4.12\junit-4.12.jar;d:\m2repo\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;d:\m2repo\com\kokesoft\kstools\1.0.0\kstools-1.0.0.jar;d:\m2repo\com\googlecode\java-diff-utils\diffutils\1.2\diffutils-1.2.jar;d:\m2repo\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;d:\m2repo\net\sf\flexjson\flexjson\3.3\flexjson-3.3.jar;d:\m2repo\org\apache\logging\log4j\log4j-api\2.17.2\log4j-api-2.17.2.jar;d:\m2repo\javax\activation\activation\1.1.1\activation-1.1.1.jar;d:\m2repo\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;d:\m2repo\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;d:\m2repo\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;d:\m2repo\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;d:\m2repo\com\fasterxml\jackson\core\jackson-core\2.14.1\jackson-core-2.14.1.jar;d:\m2repo\com\fasterxml\jackson\core\jackson-databind\2.14.1\jackson-databind-2.14.1.jar;d:\m2repo\com\fasterxml\jackson\core\jackson-annotations\2.14.1\jackson-annotations-2.14.1.jar;d:\m2repo\com\fasterxml\jackson\dataformat\jackson-dataformat-yaml\2.14.1\jackson-dataformat-yaml-2.14.1.jar;d:\m2repo\org\yaml\snakeyaml\1.33\snakeyaml-1.33.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\jmurio"/>
+    <property name="user.language" value="es"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2019-01-15"/>
+    <property name="java.home" value="d:\jdk"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\Adan\newkspc\letslearn\concurrency"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\jmurio\AppData\Local\Temp\surefire1698281812126758163\surefirebooter2705604269719705928.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.2+9"/>
+    <property name="user.name" value="jmurio"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="localRepository" value="d:\m2repo"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\jmurio\AppData\Local\Temp\"/>
+    <property name="java.version" value="11.0.2"/>
+    <property name="user.dir" value="D:\Adan\newkspc\letslearn\concurrency"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="d:\jdk\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;d:\Sencha\6.2.1.29;d:\jdk\bin;d:\iDynamics4.1.0\Software\spring-roo-1.3.1.RELEASE\bin;d:\apache-maven\bin;d:\groovy-2.4.13\bin;d:\gradle-7.0.2\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\AutoFirma\AutoFirma;C:\ProgramData\chocolatey\bin;C:\Users\jmurio\AppData\Local\Microsoft\WindowsApps;d:\personal\SublimeText3;d:\personal\tools;;C:\Users\jmurio\AppData\Local\Programs\Microsoft VS Code\bin;."/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vm.version" value="11.0.2+9"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="threeTest" classname="com.kokesoft.concurrency.PrintInOrderTest" time="0.008"/>
+  <testcase name="oneTest" classname="com.kokesoft.concurrency.PrintInOrderTest" time="0"/>
+  <testcase name="twoTest" classname="com.kokesoft.concurrency.PrintInOrderTest" time="0.002"/>
+</testsuite>
