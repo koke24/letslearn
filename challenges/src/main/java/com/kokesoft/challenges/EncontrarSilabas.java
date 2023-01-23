@@ -1,9 +1,12 @@
 package com.kokesoft.challenges;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.IOException;
 import java.io.Reader;
 import java.io.StringReader;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -157,5 +160,20 @@ public class EncontrarSilabas {
 			return sb.toString();
 		else
 			return sb.toString().substring(0, sb.length()-1);
+	}
+	
+	public static void main(String ... args) {
+		if (args.length==0) {
+			System.out.println("Uso: EncontrarSilabas [fichero_letra_cancion].txt  > [fichero_karaoke].txt");
+			System.exit(0);
+		}
+		try {
+			List<String> lines = Files.readAllLines(new File(args[0]).toPath(), StandardCharsets.UTF_8);
+			System.out.print(karaoke(String.join("\n", lines)));
+			System.exit(0);
+		} catch (IOException e) {
+			e.printStackTrace();
+			System.exit(1);
+		}
 	}
 }
